@@ -597,7 +597,7 @@ async function runCoach() {
   try {
     const res = await fetch('https://floral-snowflake-d379.zakirravat.workers.dev', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'x-api-key': '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' },
       body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 1024, system: SYSTEM_PROMPT, messages: [{ role: 'user', content: userMsg }] })
     });
     const data   = await res.json();
